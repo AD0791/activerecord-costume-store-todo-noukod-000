@@ -10,6 +10,6 @@ class CreateHauntedHouse < ActiveRecord::Migration[4.2]
       t.datetime :closing_date
       t.text :description
 
-      t.timestamps
+      t.timestamps null: false
   end
 end
