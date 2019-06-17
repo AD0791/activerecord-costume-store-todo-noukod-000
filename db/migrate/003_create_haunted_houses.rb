@@ -1,6 +1,6 @@
-# Create your haunted_houses migration here
-class CreateHauntedHouse < ActiveRecord::Migration[4.2]
-  create_table :haunted_houses do |t|
+class CreateHauntedHouses < ActiveRecord::Migration[4.2]
+  def change
+    create_table :haunted_houses do |t|
       t.string :name
       t.string :location
       t.float :price
@@ -9,7 +9,7 @@ class CreateHauntedHouse < ActiveRecord::Migration[4.2]
       t.datetime :opening_date
       t.datetime :closing_date
       t.text :description
-
+      
       t.timestamps null: false
     end
   end
